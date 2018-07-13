@@ -17,7 +17,7 @@
 
 
 # Архітектура коду
-корінь нашого проетку розбитий на 3 пакети та 1 файл
+## корінь нашого проетку розбитий на 3 пакети та 1 файл
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/
 ```
@@ -28,15 +28,9 @@ Festivality/app/src/main/java/test/mb/festivality/
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`MyApp.java`](https://pages.github.com/) - Главний клас в прогламме которая роздайот контекст
 
 
-
-
-
-
-
-
-корінь нашого проетку розбитий на 3 пакети та 1 файл
+## [`repository`] розбитий на 3 пакети та 1 файл
 ```diff
-Festivality/app/src/main/java/test/mb/festivality/
+Festivality/app/src/main/java/test/mb/festivality/repository/
 ```
 
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
