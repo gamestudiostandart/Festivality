@@ -17,10 +17,11 @@
 
 
 # Архітектура коду
-## корінь нашого проетку розбитий на 3 пакети та 1 файл
+## Root
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/
 ```
+Root нашого проетку розбитий на 3 пакети та 1 файл
 
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`aplication`](https://pages.github.com/) - пакет якій працює з UI
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`repository`](https://pages.github.com/) - пакет якій працє з Данними(Данні з інернети, або данні з бази данних)
@@ -28,16 +29,16 @@ Festivality/app/src/main/java/test/mb/festivality/
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`MyApp.java`](https://pages.github.com/) - Главний клас в прогламме которая роздайот контекст
 
 
-## [`repository`] розбитий на 3 пакети та 1 файл
+## repository
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/repository/
 ```
+repository розбитий на 2 пакети та 1 файл
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `aplication` - пакет якій працює з UI
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `repository` - пакет якій працє з Данними(Данні з інернети, або данні з бази данних)
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `utils` - пакет з моделями класі, сонверторами, парсерами...
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `MyApp.java` - Главний клас в прогламме которая роздайот контекст
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`communication`] - пакет якій працює з Сервером
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`database`] - пакет якій працює з Базою данних
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`SharedPreferencesManager.java`] - файл памятає що ми вже не першийв программі
+
 
 
 
