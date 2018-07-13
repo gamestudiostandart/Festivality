@@ -35,7 +35,7 @@
         <activity android:name=".aplication.main.ActivityMain" />
 
         <service
-            android:name=".aplication.main.services.ServiceMain"
+            android:name=".repository.communication.services.ServiceMain"
             android:exported="false" />
 
         <activity

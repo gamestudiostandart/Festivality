@@ -24,7 +24,7 @@ import java.util.Objects;
 import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 import me.everything.android.ui.overscroll.OverScrollDecoratorHelper;
 import test.mb.festivality.R;
-import test.mb.festivality.aplication.main.services.ServiceMain;
+import test.mb.festivality.repository.communication.services.ServiceMain;
 import test.mb.festivality.utils.models.User;
 
 public class ActivityMain extends MvpAppCompatActivity implements ActivityMainView, ReceiverMainResult.Receiver {

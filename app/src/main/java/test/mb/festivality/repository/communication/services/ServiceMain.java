@@ -1,4 +1,4 @@
-package test.mb.festivality.aplication.main.services;
+package test.mb.festivality.repository.communication.services;
 
 import android.app.Activity;
 import android.app.IntentService;
