@@ -15,7 +15,7 @@
 - створити додаток який буде працювати з базою данних і вже з неї проводити сортування та виводити на UI поток
 
 # Архітектура коду
-код нашого проетку розбитий на 3 пакети та 1 файл
+корінь нашого проетку розбитий на 3 пакети та 1 файл
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/
 ```
@@ -26,3 +26,15 @@ Festivality/app/src/main/java/test/mb/festivality/
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `utils` - пакет з моделями класі, сонверторами, парсерами...
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `MyApp.java` - Главний клас в прогламме которая роздайот контекст
 
+
+```diff
+Festivality/app/src/main/java/test/mb/festivality/
+```
+
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `#f03c15`
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `aplication` - пакет якій працює з UI
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `repository` - пакет якій працє з Данними(Данні з інернети, або данні з бази данних)
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `utils` - пакет з моделями класі, сонверторами, парсерами...
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) `MyApp.java` - Главний клас в прогламме которая роздайот контекст
+
+This site was built using [GitHub Pages](https://pages.github.com/)
