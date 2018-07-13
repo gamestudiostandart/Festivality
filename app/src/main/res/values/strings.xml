@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Festivality</string>
+
+    <string name="get_up_to_the">Get up-to-the-minute\nupdates</string>
+    <string name="allow_festival_to_send">Allow festival to send you\nimportant notifications like\nprogram changes, schedule and\nvenue updates</string>
+    <string name="enable">Enable</string>
+    <string name="notifications">Notifications</string>
+    <string name="location">Location</string>
+    <string name="blueTooth">BlueTooth</string>
+    <string name="enable_blueTooth">Enable BlueTooth Awareness to work for you.</string>
+    <string name="we_can_do_anything">We can do anything with your device, after you turn on bluetooth;)</string>
+    <string name="enable_smart_location">Enable Smart Location Awareness to work for you.</string>
+    <string name="get_guidance">Get guidance and utility from app via location directions, navigation and helpful on-site notificatios</string>
+    <string name="skip">Skip</string>
+    <string name="exist_permission">You already have this permission</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="get_started_now">Get started Now</string>
+    <string name="title_activity_deteils">DeteilsActivity</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="please_wait">please, wait…</string>
+    <string name="title_activity_user_page">My Title</string>
+    <string name="search">search</string>
+    <string name="save">save</string>
+    <string name="search_by">Search by…</string>
+    <string name="start_using_the_app">Start using the app</string>
+
+</resources>

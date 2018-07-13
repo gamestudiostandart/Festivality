@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgraund"
+    tools:context=".aplication.login.FragmentConfirm">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="48dp">
+
+        <ImageView
+            android:id="@+id/iv_icon"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:src="@drawable/ic_cup" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:gravity="center"
+            android:text="@string/get_started_now"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/button_corners">
+
+            <TextView
+                android:id="@+id/tv_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:paddingBottom="6dp"
+                android:paddingEnd="23dp"
+                android:paddingStart="23dp"
+                android:paddingTop="6dp"
+                android:text="@string/start_using_the_app"
+                android:textColor="@color/colorButton"
+                android:textSize="19sp" />
+
+        </FrameLayout>
+
+    </LinearLayout>
+</FrameLayout>
