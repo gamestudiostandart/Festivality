@@ -1,30 +1,30 @@
-# Важливо
+# Importantly
+- The program is under development and is not a final product
+- The program is the implementation of the technical task
 
-Програма являється реалізацією технічного завдання, не являє собою комерційного продукту та створина для відкритого доступу та демонстріціі коду 
+# The task of the program
+ - The program should display the list of users downloaded from the server and the possibility of sorting.
+ - Perform sorting on your phone because the server does not sort. 
+ - asynchronously parsite the list and display the ready-made objects on the screen
 
-# Головна поставлена задача
+# Solving the problem
 
- - Програма повинна відобрадати список користувачів скачаний з серверу та можливістю сортовання.
- - Сервер не виконує сортування тому нам потрібно перемістити весь список з серверу на телефон(максимальна кількість обєктів)
-
-# Вирішення задачі
-
-- в програмі тримати такі великі мписки теж не варіант тому створюємо базу данних куди будемо переносити данні з серверу
-- створюємо [`сервіс`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication) в який буде працювати в паралельному потоці приймати з серверу данні і зберігати в [`базу данних`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database)
-- створити [`додаток`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication) який буде працювати з базою данних і вже з неї проводити сортування та виводити на UI поток
+- create a database where we will transfer data from the server
+- create [`service.`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication) It will work in backgraun to receive data from the server and store it in [`database`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database)
+- create [`aplication.`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication) It will work with the database and display it on the UI
 
 
-# Архітектура коду
+# Code architecture
 ## Root
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/
 ```
-Root нашого проетку розбитий на 3 пакети та 1 файл
+The root of our project is divided into 3 packages and 1 file
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`aplication`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication) - пакет якій працює з UI
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`repository`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository) - пакет якій працє з Данними([Данні з інернети](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication), або данні з [бази данних](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database)
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`utils`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils) - пакет з моделями класі, сонверторами, парсерами...
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`MyApp.java`]https://github.com/gamestudiostandart/Festivality/blob/master/app/src/main/java/test/mb/festivality/MyApp.java) - Главний клас в прогламме которая роздайот контекст
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`aplication`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication) -  that package works with the UI
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`repository`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository) - that package works with the ([server](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication), or data from [database](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database)
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`utils`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils) - Package with class models, converters, parsers ...
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`MyApp.java`](https://github.com/gamestudiostandart/Festivality/blob/master/app/src/main/java/test/mb/festivality/MyApp.java) - The main class in the program that distributes the context
 
 
 ## MyApp.java
