@@ -39,6 +39,11 @@ Festivality/app/src/main/java/test/mb/festivality/utils/
 ```
 utils- пакет в допоміжними файлами
 
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`fragmentanimator`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils/fragmentanimator) - пакет якій працює з Сервером
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`models`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils/models) - пакет якій працює з Базою данних
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`parser`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils/parser) - файл памятає що ми вже не першийв программі
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`views`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils/views) - файл памятає що ми вже не першийв программі
+
 
 ## repository
 ```diff
