@@ -11,7 +11,7 @@ import android.util.Log;
 import java.util.ArrayList;
 
 import test.mb.festivality.MyApp;
-import test.mb.festivality.utils.Fields;
+import test.mb.festivality.utils.models.Fields;
 import test.mb.festivality.repository.database.inerfaces.NewsListSender;
 import test.mb.festivality.utils.models.CustomFields;
 import test.mb.festivality.utils.models.Date;
@@ -20,7 +20,7 @@ import test.mb.festivality.utils.models.User;
 import test.mb.festivality.utils.parser.convert.stringtoarraymedium.StringToArrayMediumConvertImpl;
 import test.mb.festivality.utils.parser.convert.stringtoarraymedium.StringToArrayMediumConverter;
 
-import static test.mb.festivality.utils.Fields.DATABASE_GET_MULTITABLES;
+import static test.mb.festivality.utils.models.Fields.DATABASE_GET_MULTITABLES;
 
 public class DBHelper extends SQLiteOpenHelper implements DBHelperInteractor {
 

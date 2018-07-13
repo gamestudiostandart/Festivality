@@ -40,8 +40,8 @@
 
         <activity
             android:name=".aplication.details.ActivityUserPage"
-            android:theme="@style/AppTheme">
-        </activity>
+            android:theme="@style/AppTheme"/>
+
     </application>
 
 </manifest>

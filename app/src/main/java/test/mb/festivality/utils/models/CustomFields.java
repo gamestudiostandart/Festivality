@@ -14,7 +14,6 @@ import java.util.ArrayList;
 
 import test.mb.festivality.MyApp;
 import test.mb.festivality.R;
-import test.mb.festivality.utils.Fields;
 import test.mb.festivality.utils.models.seach.UserField;
 
 public class CustomFields {

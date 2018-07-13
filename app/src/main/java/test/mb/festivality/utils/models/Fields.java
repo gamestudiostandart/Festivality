@@ -1,4 +1,4 @@
-package test.mb.festivality.utils;
+package test.mb.festivality.utils.models;
 
 public class Fields {
 

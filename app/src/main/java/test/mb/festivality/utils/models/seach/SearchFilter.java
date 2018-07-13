@@ -1,16 +1,12 @@
 package test.mb.festivality.utils.models.seach;
 
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.util.Log;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 import test.mb.festivality.MyApp;
 import test.mb.festivality.R;
-import test.mb.festivality.utils.Fields;
+import test.mb.festivality.utils.models.Fields;
 
 public class SearchFilter {
 

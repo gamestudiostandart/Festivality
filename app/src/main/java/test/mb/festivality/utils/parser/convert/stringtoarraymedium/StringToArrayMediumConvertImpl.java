@@ -7,7 +7,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import test.mb.festivality.utils.Fields;
+import test.mb.festivality.utils.models.Fields;
 import test.mb.festivality.utils.models.Medium;
 
 public class StringToArrayMediumConvertImpl implements StringToArrayMediumConverter {

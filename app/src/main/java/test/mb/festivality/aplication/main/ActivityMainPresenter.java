@@ -8,7 +8,7 @@ import com.arellomobile.mvp.MvpPresenter;
 
 import java.util.ArrayList;
 
-import test.mb.festivality.utils.Fields;
+import test.mb.festivality.utils.models.Fields;
 import test.mb.festivality.repository.database.DBHelper;
 import test.mb.festivality.repository.database.inerfaces.NewsListSender;
 import test.mb.festivality.utils.models.User;

@@ -8,7 +8,7 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-import test.mb.festivality.utils.Fields;
+import test.mb.festivality.utils.models.Fields;
 
 public class UserTypeToStringConvertImpl implements UserTypeToStringConverter {
 

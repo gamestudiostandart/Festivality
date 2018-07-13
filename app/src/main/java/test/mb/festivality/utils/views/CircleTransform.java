@@ -1,4 +1,4 @@
-package test.mb.festivality.utils;
+package test.mb.festivality.utils.views;
 
 import android.content.Context;
 import android.graphics.Bitmap;

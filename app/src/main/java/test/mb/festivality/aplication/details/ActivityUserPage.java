@@ -25,8 +25,8 @@ import com.google.gson.Gson;
 
 import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 import test.mb.festivality.R;
-import test.mb.festivality.utils.BlurTransformation;
-import test.mb.festivality.utils.CircleTransform;
+import test.mb.festivality.utils.views.BlurTransformation;
+import test.mb.festivality.utils.views.CircleTransform;
 import test.mb.festivality.utils.models.User;
 
 public class ActivityUserPage extends AppCompatActivity {

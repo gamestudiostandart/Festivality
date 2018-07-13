@@ -7,8 +7,6 @@ import com.google.gson.annotations.SerializedName;
 
 import org.json.JSONObject;
 
-import test.mb.festivality.utils.Fields;
-
 public class Medium {
 
     @SerializedName(Fields.TYPE)

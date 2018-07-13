@@ -21,7 +21,7 @@ import java.util.List;
 import test.mb.festivality.R;
 import test.mb.festivality.aplication.details.ActivityUserPage;
 import test.mb.festivality.utils.models.User;
-import test.mb.festivality.utils.CircleTransform;
+import test.mb.festivality.utils.views.CircleTransform;
 
 public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.ViewHolder> {
 

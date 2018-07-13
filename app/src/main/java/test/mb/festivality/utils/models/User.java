@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import test.mb.festivality.MyApp;
 import test.mb.festivality.R;
 import test.mb.festivality.repository.communication.userlist.interfaces.GetDataListener;
-import test.mb.festivality.utils.Fields;
 import test.mb.festivality.utils.models.seach.UserField;
 import test.mb.festivality.utils.parser.convert.stringtoarraymedium.StringToArrayMediumConvertImpl;
 import test.mb.festivality.utils.parser.convert.stringtoarraymedium.StringToArrayMediumConverter;

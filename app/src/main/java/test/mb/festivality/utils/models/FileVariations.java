@@ -8,8 +8,6 @@ import com.google.gson.annotations.SerializedName;
 import org.json.JSONException;
 import org.json.JSONObject;
 
-import test.mb.festivality.utils.Fields;
-
 public class FileVariations {
     @SerializedName(Fields.SMALL)
     @Expose
