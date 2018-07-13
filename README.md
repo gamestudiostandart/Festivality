@@ -14,6 +14,8 @@
 - створюємо [`сервіс`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication) в який буде працювати в паралельному потоці приймати з серверу данні і зберігати в [`базу данних`](https://pages.github.com/)
 - створити [`додаток`](https://pages.github.com/) який буде працювати з базою данних і вже з неї проводити сортування та виводити на UI поток
 
+
+
 # Архітектура коду
 корінь нашого проетку розбитий на 3 пакети та 1 файл
 ```diff
@@ -24,6 +26,11 @@ Festivality/app/src/main/java/test/mb/festivality/
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`repository`](https://pages.github.com/) - пакет якій працє з Данними(Данні з інернети, або данні з бази данних)
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`utils`](https://pages.github.com/) - пакет з моделями класі, сонверторами, парсерами...
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`MyApp.java`](https://pages.github.com/) - Главний клас в прогламме которая роздайот контекст
+
+
+
+
+
 
 
 
