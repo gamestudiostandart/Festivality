@@ -27,9 +27,7 @@ Festivality/app/src/main/java/test/mb/festivality/
 
 
 
-
-
-
+корінь нашого проетку розбитий на 3 пакети та 1 файл
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/
 ```
