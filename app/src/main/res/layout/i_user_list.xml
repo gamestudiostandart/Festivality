@@ -28,7 +28,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="17sp"
+            android:textSize="19sp"
             android:textStyle="bold"
             android:gravity="center|start"
             android:textColor="#4a4a4a"
@@ -39,7 +39,7 @@
             android:layout_marginTop="1dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="13sp"
+            android:textSize="15sp"
             android:gravity="center|start"
             android:textColor="#898989"
             android:id="@+id/tv_description" />
