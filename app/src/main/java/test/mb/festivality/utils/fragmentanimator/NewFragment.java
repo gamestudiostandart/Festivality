@@ -1,4 +1,4 @@
-package test.mb.festivality.utils.fragmentAnimator;
+package test.mb.festivality.utils.fragmentanimator;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

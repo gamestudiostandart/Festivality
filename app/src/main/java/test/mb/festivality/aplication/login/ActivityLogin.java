@@ -12,10 +12,10 @@ import android.support.v7.app.AppCompatActivity;
 import test.mb.festivality.R;
 import test.mb.festivality.aplication.main.ActivityMain;
 import test.mb.festivality.repository.SharedPreferencesManager;
-import test.mb.festivality.utils.fragmentAnimator.MFragmentManager;
-import test.mb.festivality.utils.fragmentAnimator.NewFragment;
-import test.mb.festivality.utils.fragmentAnimator.ReplaceToLeft;
-import test.mb.festivality.utils.fragmentAnimator.ReplaceToRight;
+import test.mb.festivality.utils.fragmentanimator.MFragmentManager;
+import test.mb.festivality.utils.fragmentanimator.NewFragment;
+import test.mb.festivality.utils.fragmentanimator.ReplaceToLeft;
+import test.mb.festivality.utils.fragmentanimator.ReplaceToRight;
 
 public class ActivityLogin extends AppCompatActivity implements FragmentPermission.OnFragmentInteractionListener {
 
