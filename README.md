@@ -73,7 +73,7 @@ Festivality/app/src/main/java/test/mb/festivality/aplication/
 ```
 This is a package that works purely with the interface and it is divided into 3 packages. By package to page. Each package contains the files that the hlm needs to reproduce the responsive mechanics.
 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`details`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication/details) - user details page
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`userpage`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication/userpage) - user details page
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`login`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication/login) - login page
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`main`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication/main) - List of pages and user sorting
 
