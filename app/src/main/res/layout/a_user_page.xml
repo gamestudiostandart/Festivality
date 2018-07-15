@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:context=".aplication.details.ActivityUserPage">
+    tools:context=".aplication.userpage.ActivityUserPage">
 
     <android.support.design.widget.AppBarLayout
         android:id="@+id/app_bar"
@@ -57,11 +57,12 @@
                 app:layout_collapseMode="parallax"
                 app:layout_collapseParallaxMultiplier="1">
 
-                <ImageView
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/iv_toolbar_user"
                     android:layout_width="88dp"
                     android:layout_height="88dp"
-                    android:background="@drawable/ic_circle_ure_rage_negative_button"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#ffffff"
                     android:padding="2dp" />
 
             </FrameLayout>

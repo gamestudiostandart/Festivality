@@ -81,7 +81,13 @@ public class ActivityMain extends MvpAppCompatActivity implements ActivityMainVi
     }
 
     private void initSortList() {
-        AdapterSortList adapterSortList = new AdapterSortList(this, mPresenter.getSearchFilter().getList());
+        AdapterSortList adapterSortList = new AdapterSortList(this, mPresenter.getSearchFilter());
+        adapterSortList.registerClickCallbackk(new AdapterSortList.ClickCallback() {
+            @Override
+            public void click() {
+                mPresenter.getNew();
+            }
+        });
         LinearLayoutManager layoutManagerGroups = new LinearLayoutManager(this);
         RecyclerView rv_sort = findViewById(R.id.rv_sort);
         rv_sort.setItemAnimator(new SlideInUpAnimator(new OvershootInterpolator(1f)));

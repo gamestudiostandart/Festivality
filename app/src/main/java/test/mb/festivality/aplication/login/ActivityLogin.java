@@ -34,11 +34,6 @@ public class ActivityLogin extends AppCompatActivity implements FragmentPermissi
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.a_login);
-//        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-//            Window window = getWindow();
-//            window.addFlags(WindowManager.LayoutParams.FLAG_DRAWS_SYSTEM_BAR_BACKGROUNDS);
-//            window.setStatusBarColor(getResources().getColor(R.color.colorLoginIcons));
-//        }
 
         fragmentNotification = FragmentPermission.newInstance(R.drawable.ic_notifications, R.string.get_up_to_the, R.string.allow_festival_to_send, R.string.notifications);
         fragmentLocation = FragmentPermission.newInstance(R.drawable.ic_explore, R.string.enable_smart_location, R.string.get_guidance, R.string.location);

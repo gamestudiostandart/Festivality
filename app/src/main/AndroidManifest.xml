@@ -39,7 +39,7 @@
             android:exported="false" />
 
         <activity
-            android:name=".aplication.details.ActivityUserPage"
+            android:name=".aplication.userpage.ActivityUserPage"
             android:theme="@style/AppTheme"/>
 
     </application>

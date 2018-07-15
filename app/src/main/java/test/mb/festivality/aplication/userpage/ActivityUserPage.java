@@ -1,6 +1,7 @@
-package test.mb.festivality.aplication.details;
+package test.mb.festivality.aplication.userpage;
 
 import android.content.Intent;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.AppBarLayout;
@@ -13,27 +14,27 @@ import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.Gravity;
 import android.view.View;
+import android.view.animation.AlphaAnimation;
 import android.view.animation.OvershootInterpolator;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.load.resource.drawable.GlideDrawable;
-import com.bumptech.glide.request.RequestListener;
-import com.bumptech.glide.request.target.Target;
+import com.bumptech.glide.request.animation.GlideAnimation;
+import com.bumptech.glide.request.target.SimpleTarget;
 import com.google.gson.Gson;
 
 import jp.wasabeef.recyclerview.animators.SlideInUpAnimator;
 import test.mb.festivality.R;
-import test.mb.festivality.utils.views.BlurTransformation;
-import test.mb.festivality.utils.views.CircleTransform;
 import test.mb.festivality.utils.models.User;
+import test.mb.festivality.utils.views.BlurBuilder;
 
 public class ActivityUserPage extends AppCompatActivity {
 
     public static final String USER_OBJEKT = "Userobject";
     private double statusTransection;
-    private ImageView iv_user, iv_toolbar_user;
+    private ImageView iv_user;
+    private ImageView iv_toolbar_user;
     private AppBarLayout app_bar;
     private User user;
 
@@ -55,7 +56,6 @@ public class ActivityUserPage extends AppCompatActivity {
 
         initAppBarLayout();
         initBackgraundPhoto(user);
-        initCirclePhoto(user);
 
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setItemAnimator(new SlideInUpAnimator(new OvershootInterpolator(1f)));
@@ -99,45 +99,28 @@ public class ActivityUserPage extends AppCompatActivity {
         });
     }
 
-    private void initCirclePhoto(User user) {
-        if (user.getMedia() != null && user.getMedia().size() > 0) {
-            Glide.with(this)
-                    .load(user.getMedia().get(0).getFiles().getVariations().getSmall())
-                    .fitCenter()
-                    .transform(new CircleTransform(this))
-                    .listener(new RequestListener<String, GlideDrawable>() {
-                        @Override
-                        public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
-                            return false;
-                        }
-
-                        @Override
-                        public boolean onResourceReady(GlideDrawable resource, String model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
-                            iv_toolbar_user.setAlpha(1f);
-                            return false;
-                        }
-                    })
-                    .into(iv_toolbar_user);
-        }
-    }
-
     private void initBackgraundPhoto(User user) {
-        Glide.with(this)
-                .load(user.getMedia().get(0).getFiles().getVariations().getTiny())
-                .fitCenter()
-                .transform(new BlurTransformation(this))
-                .listener(new RequestListener<String, GlideDrawable>() {
+        Glide.with(getApplicationContext())
+                .load(user.getMedia().get(0).getFiles().getVariations().getOriginal())
+                .asBitmap()
+                .into(new SimpleTarget<Bitmap>(100, 100) {
                     @Override
-                    public boolean onException(Exception e, String model, Target<GlideDrawable> target, boolean isFirstResource) {
-                        return false;
-                    }
+                    public void onResourceReady(Bitmap resource, GlideAnimation glideAnimation) {
+                        iv_toolbar_user.setImageBitmap(resource);
+                        AlphaAnimation animation1 = new AlphaAnimation(0.0f, 1.0f);
+                        animation1.setDuration(300);
+                        animation1.setStartOffset(600);
+                        iv_toolbar_user.setAlpha(1f);
+                        iv_toolbar_user.startAnimation(animation1);
 
-                    @Override
-                    public boolean onResourceReady(GlideDrawable resource, String model, Target<GlideDrawable> target, boolean isFromMemoryCache, boolean isFirstResource) {
+                        Bitmap resultBmp = BlurBuilder.fastblur(resource, 1f, 15);
+                        iv_user.setImageBitmap(resultBmp);
                         iv_user.setAlpha(1f);
-                        return false;
+                        AlphaAnimation animation2 = new AlphaAnimation(0.0f, 1.0f);
+                        animation2.setDuration(300);
+                        animation2.setStartOffset(300);
+                        iv_user.startAnimation(animation2);
                     }
-                })
-                .into(iv_user);
+                });
     }
 }

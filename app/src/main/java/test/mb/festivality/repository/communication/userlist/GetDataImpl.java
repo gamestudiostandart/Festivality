@@ -98,5 +98,6 @@ public class GetDataImpl implements GetDataInteractor {
             listener.onFinishedGetList();
             es.shutdown();
         }
+
     }
 }

@@ -158,7 +158,6 @@ public class DBHelper extends SQLiteOpenHelper implements DBHelperInteractor {
                         int indexTYPE = c.getColumnIndex(Fields.TYPE);
                         int indexMEDIA = c.getColumnIndex(Fields.MEDIA);
 
-
                         int indexFULLNAME = c.getColumnIndex(Fields.FULL_NAME);
                         int indexFIRST_NAME = c.getColumnIndex(Fields.FIRST_NAME);
                         int indexLAST_NAME = c.getColumnIndex(Fields.LAST_NAME);

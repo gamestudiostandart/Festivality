@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import test.mb.festivality.R;
-import test.mb.festivality.aplication.details.ActivityUserPage;
+import test.mb.festivality.aplication.userpage.ActivityUserPage;
 import test.mb.festivality.utils.models.User;
 import test.mb.festivality.utils.views.CircleTransform;
 
@@ -50,10 +50,6 @@ public class AdapterUsers extends RecyclerView.Adapter<AdapterUsers.ViewHolder> 
             holder.tv_name.setText(!TextUtils.isEmpty(user.getCustomFields().getFullName())?user.getCustomFields().getFullName():String.valueOf(user.getId()));
             if (!TextUtils.isEmpty(user.getCustomFields().getPosition())) {
                 holder.tv_description.setText(user.getCustomFields().getPosition());
-                if(!TextUtils.isEmpty(user.getCustomFields().getCompany())){
-                    String description = user.getCustomFields().getPosition() + " at " + TextUtils.isEmpty(user.getCustomFields().getCompany());
-                    holder.tv_description.setText(description);
-                }
             }
         } else {
             holder.tv_name.setText(String.valueOf(user.getId()));
