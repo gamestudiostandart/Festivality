@@ -79,5 +79,8 @@ This is a package that works purely with the interface and it is divided into 3 
 
 
 
+# Notes
+After clearing the cache, the permissions pages appear again. with native windows in android not as in IOS. about this I can tell in detail.
+
 
 
