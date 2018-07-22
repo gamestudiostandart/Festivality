@@ -83,9 +83,9 @@
 
 ## Root
 ```diff
-Festivality/app/src/main/java/test/mb/festivality/
+[`Festivality/app/src/main/java/test/mb/festivality/`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality)
 ```
-The root of our project is divided into 3 packages and 1 file
+The [`root`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality) of our project is divided into 3 packages and 1 file
 
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`aplication`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication) -  that package works with the UI
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`repository`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository) - that package works with the ([server](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication), or data from [database](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database)
