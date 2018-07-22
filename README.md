@@ -24,12 +24,12 @@
 
 # build.gradle dependencies
 ## Standard UI librarys
-implementation fileTree(include: ['*.jar'], dir: 'libs')
-implementation 'com.android.support:appcompat-v7:27.1.1'
-implementation 'com.android.support:support-v4:27.1.1'
-implementation 'com.android.support:design:27.1.1'
-implementation 'com.android.support:cardview-v7:27.1.1'
-implementation 'com.android.support:recyclerview-v7:27.1.1'
++ implementation fileTree(include: ['*.jar'], dir: 'libs')
++ implementation 'com.android.support:appcompat-v7:27.1.1'
++ implementation 'com.android.support:support-v4:27.1.1'
++ implementation 'com.android.support:design:27.1.1'
++ implementation 'com.android.support:cardview-v7:27.1.1'
++ implementation 'com.android.support:recyclerview-v7:27.1.1'
 
 ## Moxy(MVP)
 implementation 'com.arello-mobile:moxy:1.5.3'
