@@ -6,11 +6,11 @@
  - Perform sorting on your phone because the server does not sort. 
  - asynchronously parsite the list and display the ready-made objects on the screen
 
-## collapsible markdown?
+# Solution 	
 <details><summary>Solution</summary>
 <p>
 
-# Solution 	
+## Solution 	
 - create a database where we will transfer data from the server
 - create [`service.`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication) It will work in backgraun to receive data from the server and store it in [`database`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database)
 - create [`aplication.`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication) It will work with the database and display it on the UI
