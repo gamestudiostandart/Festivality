@@ -1,4 +1,18 @@
 
+## collapsible markdown?
+
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
+
 # About the aplication
  - The aplication should display the list of users downloaded from the server and the possibility of sorting.
  - Perform sorting on your phone because the server does not sort. 
