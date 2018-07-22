@@ -32,27 +32,27 @@
 + implementation 'com.android.support:recyclerview-v7:27.1.1'
 
 ## Moxy(MVP)
-implementation 'com.arello-mobile:moxy:1.5.3'
-implementation 'com.arello-mobile:moxy-android:1.5.3'
-implementation 'com.arello-mobile:moxy-app-compat:1.5.3'
-annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.3'
++ implementation 'com.arello-mobile:moxy:1.5.3'
++ implementation 'com.arello-mobile:moxy-android:1.5.3'
++ implementation 'com.arello-mobile:moxy-app-compat:1.5.3'
++ annotationProcessor 'com.arello-mobile:moxy-compiler:1.5.3'
 
 ## Retofit
-implementation 'com.squareup.retrofit2:retrofit:2.3.0'
-implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
-implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
-implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
++ implementation 'com.squareup.retrofit2:retrofit:2.3.0'
++ implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
++ implementation 'com.squareup.retrofit2:converter-scalars:2.3.0'
++ implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
 
 ## Glide
-implementation 'com.github.bumptech.glide:glide:3.8.0'
++ implementation 'com.github.bumptech.glide:glide:3.8.0'
 
 ## Third-party libraries for working with UI
-implementation 'com.crystal:crystalrangeseekbar:1.1.3'
-implementation 'de.hdodenhof:circleimageview:2.2.0'
-implementation 'me.everything:overscroll-decor-android:1.0.4'
-implementation 'jp.wasabeef:recyclerview-animators:2.3.0'
-implementation 'com.wang.avi:library:2.1.3'
-implementation 'jp.wasabeef:blurry:2.1.1'
++ implementation 'com.crystal:crystalrangeseekbar:1.1.3'
++ implementation 'de.hdodenhof:circleimageview:2.2.0'
++ implementation 'me.everything:overscroll-decor-android:1.0.4'
++ implementation 'jp.wasabeef:recyclerview-animators:2.3.0'
++ implementation 'com.wang.avi:library:2.1.3'
++ implementation 'jp.wasabeef:blurry:2.1.1'
 
 
 # Code architecture
