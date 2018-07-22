@@ -12,7 +12,6 @@ import java.util.ArrayList;
 
 import test.mb.festivality.MyApp;
 import test.mb.festivality.utils.models.Fields;
-import test.mb.festivality.repository.database.inerfaces.NewsListSender;
 import test.mb.festivality.utils.models.CustomFields;
 import test.mb.festivality.utils.models.Date;
 import test.mb.festivality.utils.models.seach.SearchFilter;
@@ -114,7 +113,7 @@ public class DBHelper extends SQLiteOpenHelper implements DBHelperInteractor {
         return true;
     }
 
-    public int getProfilesCount(String tableName) {
+    private int getProfilesCount(String tableName) {
         String countQuery = "SELECT  * FROM " + tableName;
         Cursor cursor = getDB().rawQuery(countQuery, null);
         int count = cursor.getCount();
@@ -124,8 +123,7 @@ public class DBHelper extends SQLiteOpenHelper implements DBHelperInteractor {
 
 
     @Override
-    public void getListUsers(final int startOfSet, final SearchFilter searchFilter, final NewsListSender listener) {
-
+    public void getListUsers(final int startOfSet, final SearchFilter searchFilter, final GetUsersFromDB listener) {
         Log.d("textGetDatabase", "getListUsers startOfSet " + startOfSet);
         final Handler handler = new Handler();
         new Thread(new Runnable() {
@@ -142,22 +140,17 @@ public class DBHelper extends SQLiteOpenHelper implements DBHelperInteractor {
                             null, null, null, null, count);
                     StringToArrayMediumConverter converter = new StringToArrayMediumConvertImpl();
                     if (c.moveToFirst()) {
-
                         int indexID = c.getColumnIndex(Fields.ID);
                         int indexIS_FEATURED = c.getColumnIndex(Fields.IS_FEATURED);
                         int indexLIKES = c.getColumnIndex(Fields.LIKES);
-
                         int indexOBJECT = c.getColumnIndex(Fields.OBJECT);
                         int indexSHARE = c.getColumnIndex(Fields.SHARE);
                         int indexSLUG = c.getColumnIndex(Fields.SLUG);
-
                         int indexRSVP = c.getColumnIndex(Fields.RSVP);
                         int indexILIKE = c.getColumnIndex(Fields.ILIKE);
                         int indexIRATE = c.getColumnIndex(Fields.IRATE);
-
                         int indexTYPE = c.getColumnIndex(Fields.TYPE);
                         int indexMEDIA = c.getColumnIndex(Fields.MEDIA);
-
                         int indexFULLNAME = c.getColumnIndex(Fields.FULL_NAME);
                         int indexFIRST_NAME = c.getColumnIndex(Fields.FIRST_NAME);
                         int indexLAST_NAME = c.getColumnIndex(Fields.LAST_NAME);
@@ -170,34 +163,26 @@ public class DBHelper extends SQLiteOpenHelper implements DBHelperInteractor {
                         int indexPHONE = c.getColumnIndex(Fields.PHONE);
                         int indexCITY = c.getColumnIndex(Fields.CITY);
                         int indexCOMPANY_SIZE = c.getColumnIndex(Fields.COMPANY_SIZE);
-
                         int indexAGE = c.getColumnIndex(Fields.AGE);
-
                         int indexATTENDEE_PROVIDING = c.getColumnIndex(Fields.ATTENDEE_PROVIDING);
                         int indexATTENDEE_LOOKING_FOR = c.getColumnIndex(Fields.ATTENDEE_LOOKING_FOR);
                         int indexPOSITION_TYPE = c.getColumnIndex(Fields.POSITION_TYPE);
                         int indexATTENDEE_TYPE = c.getColumnIndex(Fields.ATTENDEE_TYPE);
                         int indexINDUSTRY_TAGS = c.getColumnIndex(Fields.INDUSTRY_TAGS);
                         int indexINDUSTRY_COMPLIMENTARY_TAGS = c.getColumnIndex(Fields.INDUSTRY_COMPLIMENTARY_TAGS);
-
                         do {
                             User user = new User();
-
                             user.setId(c.getInt(indexID));
                             user.setIsFeatured(c.getInt(indexIS_FEATURED));
                             user.setLikes(c.getInt(indexLIKES));
-
                             user.setObject(c.getString(indexOBJECT));
                             user.setShare(c.getString(indexSHARE));
                             user.setSlug(c.getString(indexSLUG));
-
                             user.setRsvp(c.getString(indexRSVP));
                             user.setIlike(c.getString(indexILIKE));
                             user.setIrate(c.getString(indexIRATE));
-
                             user.setType(c.getString(indexTYPE));
                             user.setMedia(converter.convert(c.getString(indexMEDIA)));
-
                             CustomFields customFields = new CustomFields();
                             customFields.setFullName(c.getString(indexFULLNAME));
                             customFields.setFirstName(c.getString(indexFIRST_NAME));
@@ -211,28 +196,23 @@ public class DBHelper extends SQLiteOpenHelper implements DBHelperInteractor {
                             customFields.setPhone(c.getString(indexPHONE));
                             customFields.setCity(c.getString(indexCITY));
                             customFields.setCompanySize(c.getString(indexCOMPANY_SIZE));
-
                             customFields.setAge(c.getInt(indexAGE));
-
                             customFields.setAttendeeProviding(c.getString(indexATTENDEE_PROVIDING));
                             customFields.setAttendeeLookingFor(c.getString(indexATTENDEE_LOOKING_FOR));
                             customFields.setPositionType(c.getString(indexPOSITION_TYPE));
                             customFields.setAttendeeType(c.getString(indexATTENDEE_TYPE));
                             customFields.setIndustryTags(c.getString(indexINDUSTRY_TAGS));
                             customFields.setIndustryComplimentaryTags(c.getString(indexINDUSTRY_COMPLIMENTARY_TAGS));
-
                             user.setCustomFields(customFields);
-
                             list.add(user);
                         } while (c.moveToNext());
                     }
                     c.close();
-
                 }
                 handler.post(new Runnable() {
                     @Override
                     public void run() {
-                        listener.takeList(list);
+                        listener.getUsersFromDB(list);
                         Log.d("textGetDatabase", "finish in database startOfSet " + startOfSet +  " size " + String.valueOf(list.size()));
                     }
                 });

@@ -10,13 +10,13 @@ import java.util.ArrayList;
 
 import test.mb.festivality.utils.models.Fields;
 import test.mb.festivality.repository.database.DBHelper;
-import test.mb.festivality.repository.database.inerfaces.NewsListSender;
+import test.mb.festivality.repository.database.GetUsersFromDB;
 import test.mb.festivality.utils.models.User;
 import test.mb.festivality.repository.database.DBHelperInteractor;
 import test.mb.festivality.utils.models.seach.SearchFilter;
 
 @InjectViewState
-public class ActivityMainPresenter extends MvpPresenter<ActivityMainView> implements NewsListSender {
+public class ActivityMainPresenter extends MvpPresenter<ActivityMainView> implements GetUsersFromDB {
 
     ActivityMainPresenter() {
         dbHelperInteractor = DBHelper.getInstance();
@@ -100,7 +100,7 @@ public class ActivityMainPresenter extends MvpPresenter<ActivityMainView> implem
     }
 
     @Override
-    public synchronized void takeList(ArrayList<User> list) {
+    public synchronized void getUsersFromDB(ArrayList<User> list) {
         if (isPaging) {
             if (list.size() < Fields.REQWEST_TO_DATABASE_LIMIT) {
                 isEndOfDatabase = true;
