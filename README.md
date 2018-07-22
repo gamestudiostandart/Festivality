@@ -20,6 +20,8 @@
 <details><summary>Open</summary>
 <p>
 
+[`Manifest`](https://github.com/gamestudiostandart/Festivality/blob/master/app/src/main/AndroidManifest.xml)
+
 ## Permissions
 + internet
 + location
@@ -38,6 +40,11 @@
 # build.gradle dependencies
 <details><summary>Open</summary>
 <p>
+
+[`build.gradle`](https://github.com/gamestudiostandart/Festivality/blob/master/app/build.gradle)
++ compileSdkVersion 27
++ minSdkVersion 21
++ targetSdkVersion 27
 
 ## Standard UI librarys
 + implementation fileTree(include: ['*.jar'], dir: 'libs')
