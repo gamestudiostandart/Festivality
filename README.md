@@ -7,7 +7,7 @@
  - asynchronously parsite the list and display the ready-made objects on the screen
 
 
-<details><summary>Solution</summary>
+<details><summary># Solution</summary>
 <p>	
  
 - create a database where we will transfer data from the server
