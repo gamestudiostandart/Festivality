@@ -83,7 +83,7 @@
 
 ## Root
 ```diff
-[`Festivality/app/src/main/java/test/mb/festivality/`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality)
+`Festivality/app/src/main/java/test/mb/festivality/`
 ```
 The [`root`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality) of our project is divided into 3 packages and 1 file
 
