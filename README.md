@@ -130,7 +130,7 @@ Festivality/app/src/main/java/test/mb/festivality/repository/communication/
 communication is divided into 3 packages
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`retrofit`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication/retrofit) - A tool for facilitating server requests
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`userlist`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication/userlist) - package with implementation of the [method user-list](https://api.festivality.co/v2/user-list/44779) 
-- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`services`]((https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication)) - This service we run in a Backgraund
+- ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`services`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication/services) - This service we run in a Backgraund
 
 
 ## aplication
