@@ -8,7 +8,7 @@
 <details><summary>Open</summary>
 <p>	
  
-- create a database [`database.`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database) where we will transfer data from the server
+- create a [`database.`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database) where we will transfer data from the server
 - create [`service.`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication) It will work in backgraun to receive data from the server and store it in [`database`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database)
 - create [`aplication.`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication) It will work with the database and display it on the UI
 
