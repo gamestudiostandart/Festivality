@@ -77,24 +77,10 @@
 </details>
 
 
-
-# Manifest
-<details><summary>Open</summary>
-<p>
-
-
-</p>
-</details>
-
-# Screns
-<details><summary>Open</summary>
-<p>
-
-
-</p>
-</details>
-
 # Code architecture
+<details><summary>Open</summary>
+<p>
+
 ## Root
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/
@@ -157,10 +143,9 @@ This is a package that works purely with the interface and it is divided into 3 
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`login`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication/login) - login page
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`main`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication/main) - List of pages and user sorting
 
+</p>
+</details>
 
-
-# Notes
-After clearing the cache, the permissions pages appear again. with native windows in android not as in IOS. about this I can tell in detail.
 
 
 
