@@ -147,7 +147,11 @@ This is a package that works purely with the interface and it is divided into 3 
 </details>
 
 
-![](http://media.giphy.com/media/2epS5Ik1QQEAp8Gmpp/giphy.gif)
+![](http://media.giphy.com/media/2epS5Ik1QQEAp8Gmpp/giphy.gif) ![](http://media.giphy.com/media/4Zkj0vsQPUizm9cjiu/giphy.gif)
+![](https://media.giphy.com/media/4Hkgz1O4twEAaNJjai/giphy.gif)
+
+
+
 
 
 
