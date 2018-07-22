@@ -7,26 +7,22 @@
  - asynchronously parsite the list and display the ready-made objects on the screen
 
 
-<details><summary># Solution</summary>
+# Solution
+<details><summary>Open</summary>
 <p>	
  
 - create a database where we will transfer data from the server
 - create [`service.`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication) It will work in backgraun to receive data from the server and store it in [`database`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database)
 - create [`aplication.`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication) It will work with the database and display it on the UI
-</p>
-</details>
-
-
-
-## collapsible markdown?
-<details><summary>CLICK ME</summary>
-<p>
-
 
 </p>
 </details>
+
 
 # Manifest
+<details><summary>Open</summary>
+<p>
+
 ## Permissions
 + internet
 + location
@@ -38,7 +34,14 @@
 + activity - ActivityMain
 + activity - ActivityUserPage
 
+</p>
+</details>
+
+
 # build.gradle dependencies
+<details><summary>Open</summary>
+<p>
+
 ## Standard UI librarys
 + implementation fileTree(include: ['*.jar'], dir: 'libs')
 + implementation 'com.android.support:appcompat-v7:27.1.1'
@@ -70,6 +73,26 @@
 + implementation 'com.wang.avi:library:2.1.3'
 + implementation 'jp.wasabeef:blurry:2.1.1'
 
+</p>
+</details>
+
+
+
+# Manifest
+<details><summary>Open</summary>
+<p>
+
+
+</p>
+</details>
+
+# Screns
+<details><summary>Open</summary>
+<p>
+
+
+</p>
+</details>
 
 # Code architecture
 ## Root
