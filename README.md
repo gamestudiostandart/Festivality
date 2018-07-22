@@ -97,13 +97,13 @@ The [`root`](https://github.com/gamestudiostandart/Festivality/tree/master/app/s
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/MyApp.java
 ```
-MyApp.java The main class in the program. They are referring to him in context [repository](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository) and [`utils`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils)
+[`MyApp.java`](https://github.com/gamestudiostandart/Festivality/blob/master/app/src/main/java/test/mb/festivality/MyApp.java) The main class in the program. They are referring to him in context [repository](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository) and [`utils`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils)
 
 ## utils
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/utils/
 ```
-utils - auxiliary files package
+[`utils`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils) - auxiliary files package
 
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`fragmentanimator`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils/fragmentanimator) - The package works with animation of fragments
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`models`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/utils/models) - This package contains models of user classes
@@ -115,7 +115,7 @@ utils - auxiliary files package
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/repository/
 ```
-repository works with the ([server](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication), or data from [database](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database)
+[`repository`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository) works with the ([server](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication), or data from [database](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/database)
 is divided into 3 packages
 
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`communication`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication) - this package is working with the server
@@ -126,7 +126,7 @@ is divided into 3 packages
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/repository/communication/
 ```
-this package is working with the server
+[`communication`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication) package working with the server
 communication is divided into 3 packages
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`retrofit`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication/retrofit) - A tool for facilitating server requests
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`userlist`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/repository/communication/userlist) - package with implementation of the [method user-list](https://api.festivality.co/v2/user-list/44779) 
@@ -137,7 +137,7 @@ communication is divided into 3 packages
 ```diff
 Festivality/app/src/main/java/test/mb/festivality/aplication/
 ```
-This is a package that works purely with the interface and it is divided into 3 packages. By package to page. Each package contains the files that the hlm needs to reproduce the responsive mechanics.
+[`aplication`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication) is a package that works purely with the interface and it is divided into 3 packages. By package to page. Each package contains the files that the hlm needs to reproduce the responsive mechanics.
 
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`userpage`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication/userpage) - user details page
 - ![#f03c15](https://placehold.it/15/f03c15/000000?text=+) [`login`](https://github.com/gamestudiostandart/Festivality/tree/master/app/src/main/java/test/mb/festivality/aplication/login) - login page
