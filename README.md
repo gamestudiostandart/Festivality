@@ -151,11 +151,6 @@ Festivality/app/src/main/java/test/mb/festivality/aplication/
 </details>
 
 
-# Preview
-![](http://media.giphy.com/media/2epS5Ik1QQEAp8Gmpp/giphy.gif) ![](http://media.giphy.com/media/4Zkj0vsQPUizm9cjiu/giphy.gif)
-![](http://media.giphy.com/media/4Hkgz1O4twEAaNJjai/giphy.gif) ![](http://media.giphy.com/media/7zMo1NeslrJKIKpvOh/giphy.gif) 
-![](http://media.giphy.com/media/1BdqrIOXJ5NwEhD1DV/giphy.gif)
-
 
 
 
